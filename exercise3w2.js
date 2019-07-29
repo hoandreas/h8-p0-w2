@@ -10,7 +10,7 @@ if (!nama  && !peran) {
     console.log("Halo Ksatria " + nama + ", kamu dapat menyerang dengan senjatamu!");
 } else if (nama && peran === 'Tabib') {
     console.log("Selamat datang di Dunia Proxytia, " + nama);
-    console.log("Halo Tabib " + nama + ", kamu dapat mmembantu temanmu yang terluka.");
+    console.log("Halo Tabib " + nama + ", kamu dapat membantu temanmu yang terluka.");
 } else if (nama && peran === 'Penyihir') {
     console.log("Selamat datang di Dunia Proxytia, " + nama);
     console.log("Halo Penyihir " + nama + ", ciptakan keajaiban yang membantu kemenanganmu!");
