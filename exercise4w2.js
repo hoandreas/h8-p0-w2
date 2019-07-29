@@ -1,8 +1,8 @@
-var tanggal = 40;
-var bulan = 2;
-var tahun = 2010;
+var tanggal = 5;
+var bulan = 5;
+var tahun = 2012;
 
-if ((tanggal > 0 && tanggal <= 31) && (bulan > 0 && bulan <= 12) && (tahun >= 1990 && tahun <= 2200)) {
+if ((tanggal > 0 && tanggal <= 31) && (bulan > 0 && bulan < 13) && (tahun >= 1990 && tahun <= 2200)) {
     switch (bulan) {
         case 1 :
             bulan = 'Januari';
@@ -20,13 +20,25 @@ if ((tanggal > 0 && tanggal <= 31) && (bulan > 0 && bulan <= 12) && (tahun >= 19
             bulan = 'Maret';
             break;
         case 4 :
-            bulan = 'April';
+            if (tanggal <= 30){
+                bulan = 'April';
+            } else {
+                tanggal = '';
+                bulan = 'Invalid date';
+                tahun = '';                
+            }
             break;
         case 5 :
             bulan = 'Mei';
             break;
         case 6 :
-            bulan = 'Juni';
+            if (tanggal <= 30){
+                bulan = 'Juni';
+            } else {
+                tanggal = '';
+                bulan = 'Invalid date';
+                tahun = '';
+            }
             break;
         case 7 :
             bulan = 'Juli';
@@ -35,17 +47,32 @@ if ((tanggal > 0 && tanggal <= 31) && (bulan > 0 && bulan <= 12) && (tahun >= 19
             bulan = 'Agustus';
             break; 
         case 9 :
-            bulan = 'September';
+            if (tanggal <= 30){
+                bulan = 'September';
+            } else {
+                tanggal = '';
+                bulan = 'Invalid date';
+                tahun = '';
+            }
             break;
         case 10 :
             bulan = 'Oktober';
             break;
         case 11 :
-            bulan = 'November';
+            if (tanggal <= 30){
+                bulan = 'November';
+            } else {
+                tanggal = '';
+                bulan = 'Invalid date';
+                tahun = '';
+            }
             break;
         case 12 :
-            bulam = 'Desember';
-            break;                                                        
+            bulan = 'Desember';
+            break;
+        default:
+            console.log('Invalid date format');
+            break;
     }
     console.log(tanggal + ' ' + bulan + ' ' + tahun);
 } else {
