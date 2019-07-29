@@ -63,4 +63,4 @@
         IF 'nailsLength' equals to 'long'
             DISPLAY 'punish'
         END IF
-    END WHILE        
+    END WHILE
