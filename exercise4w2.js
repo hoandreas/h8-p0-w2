@@ -2,7 +2,7 @@ var tanggal = 5;
 var bulan = 5;
 var tahun = 2012;
 
-if ((tanggal > 0 && tanggal <= 31) && (bulan > 0 && bulan < 13) && (tahun >= 1990 && tahun <= 2200)) {
+if ((tanggal > 0 && tanggal <= 31) && (bulan > 0 && bulan < 13) && (tahun >= 1900 && tahun <= 2200)) {
     switch (bulan) {
         case 1 :
             bulan = 'Januari';
