@@ -19,13 +19,13 @@
 2. Tahun Kabisat
     Algoritma:
         1. Assign 'year' with any value.
-        2. If 'year' mod 4 equals to zero and 'year' mod 100 equals to one then 'year' is a leap year.
+        2. If 'year' mod 4 equals to zero and 'year' mod 100 not equal to zero then 'year' is a leap year.
         3. If 'year' mod 4 equals to zero and 'year' mod 100 equals to zero and 'year' mod 400 equals to zero then 'year' is a leap year.
         4. If none of the conditions above is fulfilled then 'year' is not a leap year.
 
     Pseudocode:
         STORE year with any value
-        IF 'year' mod 4 equals to 0 and 'year' mod 100 equals to 1
+        IF 'year' mod 4 equals to 0 and 'year' mod 100 not equal to 0
         then DISPLAY "is a Leap Year."
         IF 'year' mod 4 equals to 0 and 'year' mod 100 equals to 0 and 'year' mod 400 equals to 0
         then DISPLAY " is a Leap Year."
